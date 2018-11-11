@@ -1,0 +1,67 @@
+<html ng-app="Restaurant">
+    <head>
+        
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+        
+        <script src="./node_modules/angular/angular.min.js"></script>
+        <script src="./node_modules/angular-route/angular-route.min.js"></script>
+        
+        <!-- Desenvolvimento -->
+        <script src≃"//localhost:35729/livereload.js"></script>
+        <link rel="stylesheet" href="./app/css/style.css">       
+        <script src="./app/js/app.js"></script>
+        <script src="./app/js/services/reserva.service.js"></script>
+        <script src="./app/js/controllers/listarMesas.controller.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+        
+        <!-- Produção -->
+        <!--<link rel="stylesheet" href="./css/style.min.css">
+        <script src="./js/build.min.js"></script>-->
+        
+        <script type="text/javascript">
+            $("#dataReservassss").datepicker({
+                dateFormat: 'dd/mm/yy',
+                dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+                dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+                dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+                monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+                monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
+                nextText: 'Próximo',
+                prevText: 'Anterior'
+            });
+        </script>
+ 
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a href="#!/"><h3 style="font-weight: bold; color: #deb887 !important;">Restaurant</h3></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!/sobre">Sobre</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mais...</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown08">
+              <a class="dropdown-item" href="#">Cadastrar</a>
+              <a class="dropdown-item" href="#">Logar</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+        <div class="container">
+            <ng-view></ng-view>
+        </div>
+    </body>
+</html>
